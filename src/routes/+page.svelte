@@ -1,14 +1,20 @@
 <script lang="ts">
+    import Icon from '@iconify/svelte';
     import Card from '../components/CardName.svelte';
     import Header from '../components/Header.svelte';
     import Carrousel from '../components/Carrousel.svelte';
     import VideoCard from '../components/VideoCard.svelte';
     import Heading from '../components/font/Heading.svelte'
+    import Assignature from '../components/font/Assignature.svelte'
     import Icons from '../components/Icons.svelte';
     
     //Imagens
     import cantor from '../assets/cantor.svg';
     import silhueta from '../assets/silhueta.png';
+    import instagram from '../assets/instagram-icon.svg'
+    import whatsapp from '../assets/whatsapp-icon.svg'
+
+    import logo from '../assets/logo.svg'
     
     let a = 5
     let nomes: any = ['pedro']
@@ -44,7 +50,7 @@
         </div>
     </section>
 
-    <Carrousel {images}/>
+    <Carrousel  {images}/>
 
     <hr class="border-1 border-white-400 my-3"/>
 
@@ -59,9 +65,23 @@
         <Icons/>
     </section>
 
-    <section>
-        <img src={silhueta} alt="">
+    <section class="flex flex-col justify-center items-center py-8 px-14 gap-8">
+        <img class='w-60 bg-gray-800' src={silhueta} alt="">
+        <div class=" text-white bg-gray-800">
+            <h1 class="jcenter text-xl font-bold self-center pb-2">FAÇA UM ORÇAMENTO!</h1>
+            <p class="font-roboto text-white text-xs leading-relaxed">Para solicitar é simples, me envie um direct no instagram ou entre em contato através do whatsapp, clicando em um dos ícones abaixo:</p>
+        </div>
+        <div class="flex bg-gray-800 w-40 justify-evenly">
+            <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:whatsapp-alt" color="" /></a></span>
+            <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:instagram-alt" color="" /></a></span>
+        </div>
     </section>
+
+    <hr>
+    <footer class="h-52 p-5 flex flex-col align-middle justify-end">
+        <img class="h-16" src={logo} alt="">
+        <Assignature/>
+    </footer>
 </body>
 
 <style lang='postcss'>
@@ -70,6 +90,21 @@
     box-sizing: border-box;
     padding: 0px;
   }
+    /* div :global(.big-icon) {
+       font-size: 72px;
+   } */
+   span :global(svg) {
+       font-size: 52px;
+       /* line-height: 2em; */
+   }
+
+   .jcenter {
+    display: flex;
+    justify-content: center; 
+   }
+   /* .white-block :global(svg) {
+       color: white;
+   } */
 /* h1{
     color: #b93737;
     
