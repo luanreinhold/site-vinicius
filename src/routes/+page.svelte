@@ -38,26 +38,34 @@
 
 <Header/>
 <body class="">
-    <img src={cantor} class="w-full " alt="">
-    <section class="h-auto flex-col py-12 px-10 text-sm gap-y-4 animate-duration-75 animate-fade-up">
-        <div class="text-white mb-6 font-roboto">
-            <Heading contentTitle='A HISTÓRIA'/>
-            <p class="text-sm leading-loose">Cantor sertanejo de Indaial SC, deu início à sua carreira profissional em Junho de 2021, desde lá, sempre mantendo seus esforços para trazer o melhor show para o seu público, com seu repertório mesclado entre, sertanejo romântico, sertanejo balada e pisadinha o repertório contém também um momento “Boteco”, com muito modão, sofrência e música gaúcha, assim podendo atender a todos os gostos dentro de seu estilo.</p>
-        </div>
-        <div class="text-white animate-fade-up font-roboto">
-            <h1 class="text-xl flex justify-end font-bold">POR ONDE PASSOU</h1>
-            <p class="text-sm leading-loose">Com shows em alguns locais de referência como: Alive (Blumenau); Vidigal (Blumenau); Boteco seu Fulano (Rio do Sul); Kings Gold (Indaial) entre outros. Seu objetivo agora é conseguir abrir portas em outras cidades, assim podendo levar o seu show onde o contratante pode optar por alguns formatos.</p>
+    <div class="overflow-hidden w-screen h-screen lg:h-[120vh]">
+        <img src={cantor} class="object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%]" alt="">
+    </div>
+    <section class="h-auto flex flex-col py-10 md:py-24 px-10 text-sm gap-y-4 md:flex-row md:items-center">
+        <img class="hidden md:block md:rounded w-72" src={cantor} alt="">
+        <div class=' flex flex-col md:ml-10'>
+            <div class="text-white mb-6 font-roboto">
+                <Heading contentTitle='A HISTÓRIA'/>
+                <p class="text-sm leading-loose md:leading-relaxed">Cantor sertanejo de Indaial SC, deu início à sua carreira profissional em Junho de 2021, desde lá, sempre mantendo seus esforços para trazer o melhor show para o seu público, com seu repertório mesclado entre, sertanejo romântico, sertanejo balada e pisadinha o repertório contém também um momento “Boteco”, com muito modão, sofrência e música gaúcha, assim podendo atender a todos os gostos dentro de seu estilo.</p>
+            </div>
+            <div class="text-white font-roboto ">
+                <h1 class="text-xl flex justify-end font-bold">POR ONDE PASSOU</h1>
+                <p class="text-sm leading-loose md:leading-relaxed">Com shows em alguns locais de referência como: Alive (Blumenau); Vidigal (Blumenau); Boteco seu Fulano (Rio do Sul); Kings Gold (Indaial) entre outros. Seu objetivo agora é conseguir abrir portas em outras cidades, assim podendo levar o seu show onde o contratante pode optar por alguns formatos.</p>
+            </div>
         </div>
     </section>
+
 
     <Carrousel  {images}/>
 
     <hr class="border-1 border-white-400 my-3"/>
 
-    <section class="w-full flex flex-col justify-center items-center gap-6 ">
+    <section class="w-full flex flex-col justify-center items-center gap-6 md:p-12">
       <h1 class='text-white mb-2 font-roboto font-bold'>Meus Shows</h1>
-      <VideoCard src='https://www.youtube.com/embed/1GXB1KTzDps?si=5bZqE0YB4nyyL8x-'/>
-      <VideoCard src='https://www.youtube.com/embed/1GXB1KTzDps?si=5bZqE0YB4nyyL8x-'/>
+      <div class="md:flex md:w-full md:justify-evenly">
+          <VideoCard src='https://www.youtube.com/embed/1GXB1KTzDps?si=5bZqE0YB4nyyL8x-'/>
+          <VideoCard src='https://www.youtube.com/embed/1GXB1KTzDps?si=5bZqE0YB4nyyL8x-'/>
+      </div>
     </section>
 
     <section class="bg-white h-40 flex flex-col items-center justify-center">
@@ -66,12 +74,12 @@
     </section>
 
     <section class="flex flex-col justify-center items-center py-8 px-14 gap-8">
-        <img class='w-60 bg-gray-800' src={silhueta} alt="">
-        <div class=" text-white bg-gray-800">
-            <h1 class="jcenter text-xl font-bold self-center pb-2">FAÇA UM ORÇAMENTO!</h1>
-            <p class="font-roboto text-white text-xs leading-relaxed">Para solicitar é simples, me envie um direct no instagram ou entre em contato através do whatsapp, clicando em um dos ícones abaixo:</p>
+        <img class='w-60 md:w-[20em]' src={silhueta} alt="">
+        <div class=" text-white md:w-60">
+            <h1 class="jcenter text-xl font-bold md:font-extrabold self-center pb-2">FAÇA UM ORÇAMENTO!</h1>
+            <p class="font-roboto text-white text-xs md:text-sm leading-relaxed">Para solicitar é simples, me envie um direct no instagram ou entre em contato através do whatsapp, clicando em um dos ícones abaixo:</p>
         </div>
-        <div class="flex bg-gray-800 w-40 justify-evenly">
+        <div class="flex w-40 justify-evenly">
             <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:whatsapp-alt" color="" /></a></span>
             <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:instagram-alt" color="" /></a></span>
         </div>
