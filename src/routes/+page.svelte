@@ -14,6 +14,14 @@
     import instagram from '../assets/instagram-icon.svg'
     import whatsapp from '../assets/whatsapp-icon.svg'
 
+    // Cantor Imagens
+    import cantor01 from '../assets/singer01.jpg';
+    import cantor02 from '../assets/singer02.jpg';
+    import cantor04 from '../assets/singer04.jpg';
+    import cantor05 from '../assets/singer05.jpg';
+    import cantor06 from '../assets/singer06.png';
+    
+
     import logo from '../assets/logo.svg'
     
     let a = 5
@@ -23,14 +31,14 @@
         nomes = [...nomes];
     }
 
-    //Import Images
-    let images = [
-      {src: '/src/assets/cantor.svg'},
-      {src: '/src/assets/cantor.svg'},
-      {src: '/src/assets/cantor.svg'},
-      {src: '/src/assets/cantor.svg'},
-      {src: '/src/assets/cantor.svg'},
-    ]
+    // //Import Images
+    // let images = [
+    //   {src: '/src/assets/cantor.svg'},
+    //   {src: '/src/assets/cantor.svg'},
+    //   {src: '/src/assets/cantor.svg'},
+    //   {src: '/src/assets/cantor.svg'},
+    //   {src: '/src/assets/cantor.svg'},
+    // ]
 
     //Formatações
     const divFormat = 'flex flex-col w-2/5 p-10 m-auto my-10 bg-gradient-to-r from-pink-300 to-slate-400'
@@ -38,25 +46,27 @@
 
 <Header/>
 <body class="">
-    <div class="overflow-hidden w-screen h-screen lg:h-[120vh]">
-        <img src={cantor} class="object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%]" alt="">
-    </div>
-    <section class="h-auto flex flex-col py-10 md:py-24 px-10 text-sm gap-y-4 md:flex-row md:items-center">
-        <img class="hidden md:block md:rounded w-72" src={cantor} alt="">
-        <div class=' flex flex-col md:ml-10'>
-            <div class="text-white mb-6 font-roboto">
-                <Heading contentTitle='A HISTÓRIA'/>
-                <p class="text-sm leading-loose md:leading-relaxed">Cantor sertanejo de Indaial SC, deu início à sua carreira profissional em Junho de 2021, desde lá, sempre mantendo seus esforços para trazer o melhor show para o seu público, com seu repertório mesclado entre, sertanejo romântico, sertanejo balada e pisadinha o repertório contém também um momento “Boteco”, com muito modão, sofrência e música gaúcha, assim podendo atender a todos os gostos dentro de seu estilo.</p>
-            </div>
-            <div class="text-white font-roboto ">
-                <h1 class="text-xl flex justify-end font-bold">POR ONDE PASSOU</h1>
-                <p class="text-sm leading-loose md:leading-relaxed">Com shows em alguns locais de referência como: Alive (Blumenau); Vidigal (Blumenau); Boteco seu Fulano (Rio do Sul); Kings Gold (Indaial) entre outros. Seu objetivo agora é conseguir abrir portas em outras cidades, assim podendo levar o seu show onde o contratante pode optar por alguns formatos.</p>
-            </div>
+    <section>
+        <div class="overflow-hidden h-screen lg:h-[120vh]">
+            <img src={cantor} class="object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%]" alt="">
         </div>
+        <section class="h-auto flex flex-col py-10 md:py-24 px-10 text-sm gap-y-4 md:flex-row md:items-center lg:justify-evenly">
+            <img class="hidden md:block md:rounded-xl w-72 lg:w-80" src={cantor06} alt="">
+            <div class='flex flex-col md:ml-10 lg:w-2/4'>
+                <div class="text-white mb-6 font-roboto">
+                    <Heading contentTitle='A HISTÓRIA'/>
+                    <p class="text-sm leading-loose md:leading-relaxed lg:text-base">Cantor sertanejo de Indaial SC, deu início à sua carreira profissional em Junho de 2021, desde lá, sempre mantendo seus esforços para trazer o melhor show para o seu público, com seu repertório mesclado entre, sertanejo romântico, sertanejo balada e pisadinha o repertório contém também um momento “Boteco”, com muito modão, sofrência e música gaúcha, assim podendo atender a todos os gostos dentro de seu estilo.</p>
+                </div>
+                <div class="text-white font-roboto ">
+                    <h1 class="text-xl flex justify-end font-bold">POR ONDE PASSOU</h1>
+                    <p class="text-sm leading-loose md:leading-relaxed lg:text-base">Com shows em alguns locais de referência como: Alive (Blumenau); Vidigal (Blumenau); Boteco seu Fulano (Rio do Sul); Kings Gold (Indaial) entre outros. Seu objetivo agora é conseguir abrir portas em outras cidades, assim podendo levar o seu show onde o contratante pode optar por alguns formatos.</p>
+                </div>
+            </div>
+        </section>
     </section>
 
 
-    <Carrousel  {images}/>
+    <Carrousel/>
 
     <hr class="border-1 border-white-400 my-3"/>
 
