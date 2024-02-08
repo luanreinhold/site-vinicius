@@ -6,7 +6,7 @@
     import youtube from '../assets/youtube-icon.svg'
 </script>
 
-<div class="flex w-3/4 justify-around ">
+<div class="flex w-3/4 lg:w-2/4 justify-around">
     <span class="text-black"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:instagram-alt" color="" /></a></span>
     <span class="text-black"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:whatsapp-alt" color="" /></a></span>
     <span class="text-black"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:youtube" color="" /></a></span>
