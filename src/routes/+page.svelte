@@ -5,7 +5,6 @@
     import Header from '../components/Header.svelte';
     import Carrousel from '../components/Carrousel.svelte';
     import VideoCard from '../components/VideoCard.svelte';
-    import Heading from '../components/font/Heading.svelte'
     import Assignature from '../components/font/Assignature.svelte'
     import Icons from '../components/Icons.svelte';
     
