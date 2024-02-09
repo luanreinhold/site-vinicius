@@ -27,17 +27,8 @@
     import { fade } from 'svelte/transition'
     import { onMount } from 'svelte';
 
-    // //Import Images
-    // let images = [
-    //   {src: '/src/assets/cantor.svg'},
-    //   {src: '/src/assets/cantor.svg'},
-    //   {src: '/src/assets/cantor.svg'},
-    //   {src: '/src/assets/cantor.svg'},
-    //   {src: '/src/assets/cantor.svg'},
-    // ]
 
     //Formatações
-    const divFormat = `data-aos="fade-up"`
     import AOS from 'aos';
     import 'aos/dist/aos.css'; // Import AOS styles
     onMount(() => {
@@ -50,11 +41,11 @@
 <body class="">
     <section>
         <div class="overflow-hidden h-screen lg:h-[120vh]">
-            <img src={cantor} class="object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%] md:hidden" alt="">
-            <img src={cantor02} class="hidde object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%] md:block" alt="">
+            <img src={cantor} class="pointer-events-none object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%] md:hidden" alt="">
+            <img src={cantor02} class="pointer-events-none hidde object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%] md:block" alt="">
         </div>
-        <section id="sobreMim" class="h-auto flex flex-col py-10 md:py-24 px-10 text-sm gap-y-4 md:flex-row md:items-center lg:justify-evenly lg:h-[100vh]">
-            <img data-aos="zoom-in" class="hidden md:block md:rounded-xl w-72 lg:w-80" src={cantor06} alt="">
+        <section id="sobreMim" class="h-[80vh] items-center justify-center flex flex-col py-10 md:py-24 px-10 text-sm gap-y-4 md:flex-row md:items-center lg:justify-evenly lg:py-0">
+            <img data-aos="zoom-in" class="hidden md:block md:rounded-xl w-72 lg:w-80 xl:w-96" src={cantor06} alt="">
             <div class='flex flex-col md:ml-10 lg:w-2/4 xl:w-2/5'>
                 <div data-aos="fade-up" class="text-white mb-6 font-roboto transition:fade={{delay: 250, duration: 300}}">
                     <h1 data-aos="zoom-in" class="text-xl font-white font-bold xl:text-2xl">A HISTÓRIA</h1>
@@ -68,21 +59,23 @@
         </section>
     </section>
 
+    <section class="bg-slate-700 lg:flex lg:justify-center ">
+        <Carrousel/>
+    </section>
 
-    <Carrousel/>
+    <hr id='fotos' class="border-1 border-white-400 my-1"/>
 
-    <hr id='fotos' class="border-1 border-white-400 my-3"/>
-
-    <section class="w-full flex flex-col justify-center items-center gap-6 md:p-12">
+    <section class="w-full flex flex-col justify-center items-center py-10 md:p-12">
       <h1 data-aos="fade-in" class='text-white mb-2 font-roboto font-bold'>Meus Shows</h1>
-      <div class="md:flex md:w-full md:justify-evenly">
-          <VideoCard src='https://www.youtube.com/embed/1GXB1KTzDps?si=5bZqE0YB4nyyL8x-'/>
-          <VideoCard src='https://www.youtube.com/embed/1GXB1KTzDps?si=5bZqE0YB4nyyL8x-'/>
+      <div class="flex flex-col gap-8 justify-between md:flex md:flex-row md:w-full md:justify-evenly md:flex-wrap">
+          <VideoCard src='https://www.youtube.com/embed/3VWb_U5cJNA?si=CY3qWnyb_OLDBtPh' duration={'200'} />
+          <VideoCard src='https://www.youtube.com/embed/VHDjn-gipd8?si=sUS6KI0orN0t481C' duration={'300'}/>
+          <VideoCard src='https://www.youtube.com/embed/VvPBramzMZc?si=nIi0REt42dhZQjCN' duration={'400'}/>
       </div>
     </section>
 
     <section class="bg-white h-40 flex flex-col items-center justify-center">
-        <h1 class="font-roboto text-sm lg:text-lg font-bold py-4">FIQUE POR DENTRO DE NOVOS CONTÉUDOS!</h1>
+        <h1 data-aos="fade-up"class="font-roboto text-sm lg:text-lg font-bold py-4">FIQUE POR DENTRO DE NOVOS CONTÉUDOS!</h1>
         <Icons/>
     </section>
 
@@ -92,8 +85,8 @@
             <h1 class="jcenter text-xl font-bold md:font-extrabold self-center pb-2">FAÇA UM ORÇAMENTO!</h1>
             <p class="font-roboto text-white text-xs md:text-sm leading-relaxed lg:text-lg lg:leading-normal">Para solicitar é simples, me envie um direct no instagram ou entre em contato através do whatsapp, clicando em um dos ícones abaixo:</p>
             <div class=" mt-2 lg:mt-6 flex justify-evenly items-center">
-                <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:whatsapp-alt" color="" /></a></span>
-                <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block' icon="uil:instagram-alt" color="" /></a></span>
+                <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block transition delay-50 hover:scale-110 ease-in-out' icon="uil:whatsapp-alt" color="" /></a></span>
+                <span class="text-white"><a href="https://www.instagram.com/vinimarcom/" target="_blank"><Icon class='white-block transition delay-50 hover:scale-110 ease-in-out' icon="uil:instagram-alt" color="" /></a></span>
             </div>
         </div>
     </section>
@@ -131,21 +124,9 @@
        font-size: 52px;
        /* line-height: 2em; */
    }
-
+asd
    .jcenter {
     display: flex;
     justify-content: center; 
    }
-   /* .white-block :global(svg) {
-       color: white;
-   } */
-/* h1{
-    color: #b93737;
-    
-  }
-
-.div-format {
-    @apply  
-    flex flex-col w-2/5 p-10 m-auto my-10 bg-gradient-to-r from-pink-300 to-slate-400
-} */
 </style>
