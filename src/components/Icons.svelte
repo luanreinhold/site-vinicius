@@ -8,18 +8,18 @@
             <Icon class='transition delay-50 hover:scale-110 ease-in-out' icon="uil:instagram-alt" color="" />
         </a>
     </span>
-    <span data-aos="zoom-in" class="text-black">
-        <a href="https://www.youtube.com/@vinimarcom182" target="_blank">
+    <!-- <span data-aos="zoom-in" class="text-black">
+        <a href="https://api.whatsapp.com/send/?phone=554791537104&text=Gostaria+de+solicitar+um+or%C3%A7amento+do+Vini+Marcom&type=phone_number&app_absent=0" target="_blank">
             <Icon class='transition delay-50 hover:scale-110 ease-in-out' icon="uil:whatsapp-alt" color="" />
         </a>
-    </span>
+    </span> -->
     <span data-aos="zoom-in" class="text-black">
         <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
             <Icon class='transition delay-50 hover:scale-110 ease-in-out' icon="uil:youtube" color="" />
         </a>
     </span>
     <span data-aos="zoom-in" class="text-black">
-        <a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank">
+        <a href="https://www.tiktok.com/@vinimarcom" target="_blank">
             <Icon class='transition delay-50 hover:scale-110 ease-in-out' icon="ion:logo-tiktok" color="" />
         </a>
     </span>

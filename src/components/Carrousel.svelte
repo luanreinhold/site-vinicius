@@ -21,7 +21,7 @@
   
 </script>
   
-  <ul class="lg:hidden lg:gap-0 lg:w-2/4 bg-slate-300   flex w-full snap-x snap-mandatory gap-6 md:gap-8 overflow-x-auto pb-6 before:w-[15vw] md:before:w-[0vw] before:shrink-0 after:w-[15vw] lg:flex-wrap lg:justify-around lg:items-center ">
+  <ul class="md:hidden lg:gap-0 lg:w-2/4 flex w-full snap-x snap-mandatory gap-6 md:gap-8 overflow-x-auto pb-6 before:w-[1vw] md:before:w-[0vw] before:shrink-0 after:w-[15vw] lg:flex-wrap lg:justify-around lg:items-center ">
     {#each images as { src }, index}
         <li class="shrink-0 snap-center">
             <img class='rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]' src={src} alt="Imagem Carrosel">

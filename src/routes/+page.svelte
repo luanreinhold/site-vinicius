@@ -1,7 +1,6 @@
 <script lang="ts">
     //Import Componentes
     import Icon from '@iconify/svelte';
-    import Card from '../components/CardName.svelte';
     import Header from '../components/Header.svelte';
     import Carrousel from '../components/Carrousel.svelte';
     import VideoCard from '../components/VideoCard.svelte';
@@ -11,8 +10,6 @@
     //Imagens
     import cantor from '../assets/cantor.svg';
     import silhueta from '../assets/silhueta.png';
-    import instagram from '../assets/instagram-icon.svg'
-    import whatsapp from '../assets/whatsapp-icon.svg'
 
     // Cantor Imagens
     import cantor01 from '../assets/singer01.jpg';
@@ -44,7 +41,7 @@
             <img src={cantor} class="pointer-events-none object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%] md:hidden" alt="">
             <img src={cantor02} class="pointer-events-none hidde object-cover w-full h-full md:h-auto xl:h-auto lg:mt-[-10%] md:block" alt="">
         </div>
-        <section id="sobreMim" class="h-[80vh] items-center justify-center flex flex-col py-10 md:py-24 px-10 text-sm gap-y-4 md:flex-row md:items-center lg:justify-evenly lg:py-0">
+        <section id="sobreMim" class="h-auto items-center justify-center flex flex-col py-10 md:py-24 px-10 text-sm gap-y-4 md:flex-row md:items-center lg:justify-evenly lg:py-15">
             <img data-aos="zoom-in" class="hidden md:block md:rounded-xl w-72 lg:w-80 xl:w-96" src={cantor06} alt="">
             <div class='flex flex-col md:ml-10 lg:w-2/4 xl:w-2/5'>
                 <div data-aos="fade-up" class="text-white mb-6 font-roboto transition:fade={{delay: 250, duration: 300}}">
@@ -59,9 +56,17 @@
         </section>
     </section>
 
-    <section class="bg-slate-700 lg:flex lg:justify-center ">
+    <section class="lg:flex lg:justify-center ">
         <Carrousel/>
     </section>
+
+    <!-- <section class="hidden lg:block lg:flex lg:h-auto lg:flex-wrap bg-slate-300 px-20 justify-center items-center">
+        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor01} alt="">
+        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor02} alt="">
+        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor04} alt="">
+        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor05} alt="">
+        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor06} alt="">
+    </section> -->
 
     <hr id='fotos' class="border-1 border-white-400 my-1"/>
 
@@ -85,7 +90,7 @@
             <h1 class="jcenter text-xl font-bold md:font-extrabold self-center pb-2">FAÇA UM ORÇAMENTO!</h1>
             <p class="font-roboto text-white text-xs md:text-sm leading-relaxed lg:text-lg lg:leading-normal">Para solicitar é simples, me envie um direct no instagram ou entre em contato através do whatsapp, clicando em um dos ícones abaixo:</p>
             <div class=" mt-2 lg:mt-6 flex justify-evenly items-center">
-                <span class="text-white"><a href="https://www.youtube.com/watch?v=VIDEO_ID" target="_blank"><Icon class='white-block transition delay-50 hover:scale-110 ease-in-out' icon="uil:whatsapp-alt" color="" /></a></span>
+                <span class="text-white"><a href="https://api.whatsapp.com/send/?phone=554791537104&text=Gostaria+de+solicitar+um+or%C3%A7amento+do+Vini+Marcom&type=phone_number&app_absent=0" target="_blank"><Icon class='white-block transition delay-50 hover:scale-110 ease-in-out' icon="uil:whatsapp-alt" color="" /></a></span>
                 <span class="text-white"><a href="https://www.instagram.com/vinimarcom/" target="_blank"><Icon class='white-block transition delay-50 hover:scale-110 ease-in-out' icon="uil:instagram-alt" color="" /></a></span>
             </div>
         </div>
