@@ -5,6 +5,8 @@ export default {
     fontFamily: {
       roboto: ["Roboto", "sans-serif"],
       honk: ["Honk", "sans-serif"],
+      sans: ["Sans", "sans-serif"],
+      kode: ["Kode-Mono", "Kode Mono"]
     },
     extend: {
       colors: {

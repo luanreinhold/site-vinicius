@@ -1,1 +1,1 @@
-<a href="https://www.linkedin.com/in/luanreinhold/" class="flex justify-center m-2 font-honk text-white text-xl align-center">© Desenvolvido por: Luan Reinhold</a>
+<a href="https://www.linkedin.com/in/luanreinhold/" class="text-base flex justify-center m-5 font-kode text-white md:text-xl align-center">© Desenvolvido por: Luan Reinhold</a>

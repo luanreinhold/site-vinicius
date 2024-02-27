@@ -60,13 +60,16 @@
         <Carrousel/>
     </section>
 
-    <!-- <section class="hidden lg:block lg:flex lg:h-auto lg:flex-wrap bg-slate-300 px-20 justify-center items-center">
-        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor01} alt="">
-        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor02} alt="">
-        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor04} alt="">
-        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor05} alt="">
-        <img class="rounded-2xl h-96 w-[19em] md:w-[21.5em] lg:w-[29em] lg:h-[30em]" src={cantor06} alt="">
-    </section> -->
+    <section class="hidden lg:flex flex-col items-center justify-around md:pb-20 ly:p-20 gap-10">
+        <div data-aos="zoom-in" class="collage-pictures flex justify-evenly w-full">
+            <img data-aos="fade-up" data-aos-delay={200} class="rounded-2xl md:w-[22em] lg:w-[30em] lg:h-[35em]" src={cantor01} alt="">
+            <img data-aos="fade-up" data-aos-delay={300} class="rounded-2xl md:w-[22em] lg:w-[30em] lg:h-[35em]" src={cantor02} alt="">
+        </div>
+        <div data-aos="zoom-in" class="collage-pictures flex justify-evenly w-full">
+            <img data-aos="fade-up" data-aos-delay={400} class="rounded-2xl md:w-[22em] lg:w-[30em] " src={cantor04} alt="">
+            <img data-aos="fade-up" data-aos-delay={500} class="rounded-2xl md:w-[22em] lg:w-[30em] " src={cantor05} alt="">
+        </div>
+    </section>
 
     <hr id='fotos' class="border-1 border-white-400 my-1"/>
 
@@ -97,7 +100,7 @@
     </section>
 
     <hr>
-    <footer class="h-52 p-5 flex flex-col align-middle justify-end">
+    <footer class="h-52 p-2 flex flex-col align-middle justify-end">
         <img class="h-16" src={logo} alt="">
         <Assignature/>
     </footer>
